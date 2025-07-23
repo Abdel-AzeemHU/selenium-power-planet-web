@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="22" passed="20" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-01-28T19:38:36 GMT+04:00" name="All Test Suite" finished-at="2025-01-28T19:43:07 GMT+04:00" duration-ms="270699">
+    <groups>
+    </groups>
+    <test started-at="2025-01-28T19:38:36 GMT+04:00" name="/Users/mlungisimbele/Documents/GitHub/waslah.web" finished-at="2025-01-28T19:43:07 GMT+04:00" duration-ms="270699">
+      <class name="tests.merchant_tests">
+        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:tests.merchant_tests@52b56a3e]" started-at="2025-01-28T19:40:16 GMT+04:00" name="launchbrowser" finished-at="2025-01-28T19:40:22 GMT+04:00" duration-ms="5618" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method signature="CalculateCourierPriceAndSelectFedex()[pri:0, instance:tests.merchant_tests@52b56a3e]" started-at="2025-01-28T19:40:22 GMT+04:00" name="CalculateCourierPriceAndSelectFedex" description="TC ID - 47081: Calculate the courier price" finished-at="2025-01-28T19:40:26 GMT+04:00" duration-ms="3888" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Courier selection could not be done for FedEx - test failed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Courier selection could not be done for FedEx - test failed
+at org.testng.Assert.fail(Assert.java:110)
+at teststeps.merchant_actions.SelectCourierFromCourierPage(merchant_actions.java:676)
+at tests.merchant_tests.CalculateCourierPriceAndSelectFedex(merchant_tests.java:110)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CalculateCourierPriceAndSelectFedex -->
+        <test-method is-config="true" signature="close()[pri:0, instance:tests.merchant_tests@52b56a3e]" started-at="2025-01-28T19:40:26 GMT+04:00" name="close" finished-at="2025-01-28T19:40:27 GMT+04:00" duration-ms="478" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:tests.merchant_tests@52b56a3e]" started-at="2025-01-28T19:40:27 GMT+04:00" name="launchbrowser" finished-at="2025-01-28T19:40:36 GMT+04:00" duration-ms="9920" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method signature="CalculateCourierPricewithExceedingWeight()[pri:0, instance:tests.merchant_tests@52b56a3e]" started-at="2025-01-28T19:40:36 GMT+04:00" name="CalculateCourierPricewithExceedingWeight" description="TC ID - 47081: Calculate the courier price with exceeding weight" finished-at="2025-01-28T19:40:45 GMT+04:00" duration-ms="8052" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CalculateCourierPricewithExceedingWeight -->
+        <test-method is-config="true" signature="close()[pri:0, instance:tests.merchant_tests@52b56a3e]" started-at="2025-01-28T19:40:45 GMT+04:00" name="close" finished-at="2025-01-28T19:40:45 GMT+04:00" duration-ms="382" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:tests.merchant_tests@52b56a3e]" started-at="2025-01-28T19:40:45 GMT+04:00" name="launchbrowser" finished-at="2025-01-28T19:40:50 GMT+04:00" duration-ms="5263" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method signature="CompleteWalletTopup()[pri:0, instance:tests.merchant_tests@52b56a3e]" started-at="2025-01-28T19:40:50 GMT+04:00" name="CompleteWalletTopup" description="TC ID 46045: Calculate the Wallet Topup" finished-at="2025-01-28T19:40:58 GMT+04:00" duration-ms="7297" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CompleteWalletTopup -->
+        <test-method is-config="true" signature="close()[pri:0, instance:tests.merchant_tests@52b56a3e]" started-at="2025-01-28T19:40:58 GMT+04:00" name="close" finished-at="2025-01-28T19:40:58 GMT+04:00" duration-ms="432" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:tests.merchant_tests@52b56a3e]" started-at="2025-01-28T19:40:58 GMT+04:00" name="launchbrowser" finished-at="2025-01-28T19:41:04 GMT+04:00" duration-ms="5208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method signature="POSRefundButton()[pri:0, instance:tests.merchant_tests@52b56a3e]" started-at="2025-01-28T19:41:04 GMT+04:00" name="POSRefundButton" description="TC ID - 46097: POS Refund button functionality" finished-at="2025-01-28T19:41:14 GMT+04:00" duration-ms="10373" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- POSRefundButton -->
+        <test-method is-config="true" signature="close()[pri:0, instance:tests.merchant_tests@52b56a3e]" started-at="2025-01-28T19:41:14 GMT+04:00" name="close" finished-at="2025-01-28T19:41:15 GMT+04:00" duration-ms="386" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:tests.merchant_tests@52b56a3e]" started-at="2025-01-28T19:41:15 GMT+04:00" name="launchbrowser" finished-at="2025-01-28T19:41:20 GMT+04:00" duration-ms="5290" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method signature="POSRefundButtonDisableCase1()[pri:0, instance:tests.merchant_tests@52b56a3e]" started-at="2025-01-28T19:41:20 GMT+04:00" name="POSRefundButtonDisableCase1" description="TC ID - 46101: POS Refund button functionality" finished-at="2025-01-28T19:41:27 GMT+04:00" duration-ms="7012" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- POSRefundButtonDisableCase1 -->
+        <test-method is-config="true" signature="close()[pri:0, instance:tests.merchant_tests@52b56a3e]" started-at="2025-01-28T19:41:27 GMT+04:00" name="close" finished-at="2025-01-28T19:41:28 GMT+04:00" duration-ms="374" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:tests.merchant_tests@52b56a3e]" started-at="2025-01-28T19:41:28 GMT+04:00" name="launchbrowser" finished-at="2025-01-28T19:41:34 GMT+04:00" duration-ms="5954" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method signature="POSRefundButtonDisableCase2()[pri:0, instance:tests.merchant_tests@52b56a3e]" started-at="2025-01-28T19:41:34 GMT+04:00" name="POSRefundButtonDisableCase2" description="TC ID - 46101: POS Refund button functionality" finished-at="2025-01-28T19:41:43 GMT+04:00" duration-ms="9322" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- POSRefundButtonDisableCase2 -->
+        <test-method is-config="true" signature="close()[pri:0, instance:tests.merchant_tests@52b56a3e]" started-at="2025-01-28T19:41:43 GMT+04:00" name="close" finished-at="2025-01-28T19:41:44 GMT+04:00" duration-ms="303" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:tests.merchant_tests@52b56a3e]" started-at="2025-01-28T19:41:44 GMT+04:00" name="launchbrowser" finished-at="2025-01-28T19:41:49 GMT+04:00" duration-ms="5187" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method signature="WalletMandatoryFieldTest()[pri:0, instance:tests.merchant_tests@52b56a3e]" started-at="2025-01-28T19:41:49 GMT+04:00" name="WalletMandatoryFieldTest" description="TC ID : Wallet Mandatory field check" finished-at="2025-01-28T19:41:52 GMT+04:00" duration-ms="3593" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Wallet Mandatory field are blank - test failed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Wallet Mandatory field are blank - test failed
+at org.testng.Assert.fail(Assert.java:110)
+at teststeps.merchant_actions.WalletMandatoryFieldCheck(merchant_actions.java:786)
+at tests.merchant_tests.WalletMandatoryFieldTest(merchant_tests.java:120)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WalletMandatoryFieldTest -->
+        <test-method is-config="true" signature="close()[pri:0, instance:tests.merchant_tests@52b56a3e]" started-at="2025-01-28T19:41:53 GMT+04:00" name="close" finished-at="2025-01-28T19:41:53 GMT+04:00" duration-ms="325" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:tests.merchant_tests@52b56a3e]" started-at="2025-01-28T19:41:53 GMT+04:00" name="launchbrowser" finished-at="2025-01-28T19:41:58 GMT+04:00" duration-ms="5216" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method signature="SignUpCompany()[pri:1, instance:tests.merchant_tests@52b56a3e]" started-at="2025-01-28T19:41:58 GMT+04:00" name="SignUpCompany" description="TC ID - 35086: Sign Up - Company functionality" finished-at="2025-01-28T19:42:05 GMT+04:00" duration-ms="6807" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignUpCompany -->
+        <test-method is-config="true" signature="close()[pri:0, instance:tests.merchant_tests@52b56a3e]" started-at="2025-01-28T19:42:05 GMT+04:00" name="close" finished-at="2025-01-28T19:42:06 GMT+04:00" duration-ms="385" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:tests.merchant_tests@52b56a3e]" started-at="2025-01-28T19:42:06 GMT+04:00" name="launchbrowser" finished-at="2025-01-28T19:42:11 GMT+04:00" duration-ms="5225" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method signature="SignUpIndividual()[pri:2, instance:tests.merchant_tests@52b56a3e]" started-at="2025-01-28T19:42:11 GMT+04:00" name="SignUpIndividual" description="TC ID - 35088: Sign Up - Individual functionality" finished-at="2025-01-28T19:42:16 GMT+04:00" duration-ms="5360" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignUpIndividual -->
+        <test-method is-config="true" signature="close()[pri:0, instance:tests.merchant_tests@52b56a3e]" started-at="2025-01-28T19:42:16 GMT+04:00" name="close" finished-at="2025-01-28T19:42:17 GMT+04:00" duration-ms="272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:tests.merchant_tests@52b56a3e]" started-at="2025-01-28T19:42:17 GMT+04:00" name="launchbrowser" finished-at="2025-01-28T19:42:22 GMT+04:00" duration-ms="5390" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method signature="CreateDomesticShipment()[pri:3, instance:tests.merchant_tests@52b56a3e]" started-at="2025-01-28T19:42:22 GMT+04:00" name="CreateDomesticShipment" description="TC ID - 37770: Create a domestic shipment using the new journey" finished-at="2025-01-28T19:43:06 GMT+04:00" duration-ms="43946" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateDomesticShipment -->
+        <test-method is-config="true" signature="close()[pri:0, instance:tests.merchant_tests@52b56a3e]" started-at="2025-01-28T19:43:06 GMT+04:00" name="close" finished-at="2025-01-28T19:43:07 GMT+04:00" duration-ms="516" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- tests.merchant_tests -->
+      <class name="tests.login_tests">
+        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:tests.login_tests@5b58ed3c]" started-at="2025-01-28T19:38:36 GMT+04:00" name="launchbrowser" finished-at="2025-01-28T19:38:43 GMT+04:00" duration-ms="6543" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method signature="loginSuccessfullyTest()[pri:1, instance:tests.login_tests@5b58ed3c]" started-at="2025-01-28T19:38:43 GMT+04:00" name="loginSuccessfullyTest" description="TC ID - 34206: Login" finished-at="2025-01-28T19:38:46 GMT+04:00" duration-ms="2991" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginSuccessfullyTest -->
+        <test-method is-config="true" signature="close()[pri:0, instance:tests.login_tests@5b58ed3c]" started-at="2025-01-28T19:38:47 GMT+04:00" name="close" finished-at="2025-01-28T19:38:48 GMT+04:00" duration-ms="489" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:tests.login_tests@5b58ed3c]" started-at="2025-01-28T19:38:48 GMT+04:00" name="launchbrowser" finished-at="2025-01-28T19:38:53 GMT+04:00" duration-ms="5395" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method signature="loginUnsuccessfullyTest1()[pri:2, instance:tests.login_tests@5b58ed3c]" started-at="2025-01-28T19:38:53 GMT+04:00" name="loginUnsuccessfullyTest1" description="TC ID - 34206: Login - Incorrect Username/Correct password validation" finished-at="2025-01-28T19:38:55 GMT+04:00" duration-ms="1472" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginUnsuccessfullyTest1 -->
+        <test-method is-config="true" signature="close()[pri:0, instance:tests.login_tests@5b58ed3c]" started-at="2025-01-28T19:38:55 GMT+04:00" name="close" finished-at="2025-01-28T19:38:55 GMT+04:00" duration-ms="356" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:tests.login_tests@5b58ed3c]" started-at="2025-01-28T19:38:55 GMT+04:00" name="launchbrowser" finished-at="2025-01-28T19:39:02 GMT+04:00" duration-ms="6929" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method signature="loginUnsuccessfullyTest2()[pri:3, instance:tests.login_tests@5b58ed3c]" started-at="2025-01-28T19:39:02 GMT+04:00" name="loginUnsuccessfullyTest2" description="TC ID - 34207: Correct username/Incorrect password validation" finished-at="2025-01-28T19:39:04 GMT+04:00" duration-ms="2285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginUnsuccessfullyTest2 -->
+        <test-method is-config="true" signature="close()[pri:0, instance:tests.login_tests@5b58ed3c]" started-at="2025-01-28T19:39:05 GMT+04:00" name="close" finished-at="2025-01-28T19:39:05 GMT+04:00" duration-ms="277" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:tests.login_tests@5b58ed3c]" started-at="2025-01-28T19:39:05 GMT+04:00" name="launchbrowser" finished-at="2025-01-28T19:39:11 GMT+04:00" duration-ms="5767" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method signature="loginUnsuccessfullyTest3()[pri:4, instance:tests.login_tests@5b58ed3c]" started-at="2025-01-28T19:39:11 GMT+04:00" name="loginUnsuccessfullyTest3" description="TC ID - 34208: Incorrect username/Incorrect password validation" finished-at="2025-01-28T19:39:13 GMT+04:00" duration-ms="2367" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginUnsuccessfullyTest3 -->
+        <test-method is-config="true" signature="close()[pri:0, instance:tests.login_tests@5b58ed3c]" started-at="2025-01-28T19:39:13 GMT+04:00" name="close" finished-at="2025-01-28T19:39:14 GMT+04:00" duration-ms="324" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:tests.login_tests@5b58ed3c]" started-at="2025-01-28T19:39:14 GMT+04:00" name="launchbrowser" finished-at="2025-01-28T19:39:19 GMT+04:00" duration-ms="5228" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method signature="loginUnsuccessfullyTest4()[pri:5, instance:tests.login_tests@5b58ed3c]" started-at="2025-01-28T19:39:19 GMT+04:00" name="loginUnsuccessfullyTest4" description="TC ID - 34209: Blank username/Correct password validation" finished-at="2025-01-28T19:39:20 GMT+04:00" duration-ms="1066" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginUnsuccessfullyTest4 -->
+        <test-method is-config="true" signature="close()[pri:0, instance:tests.login_tests@5b58ed3c]" started-at="2025-01-28T19:39:20 GMT+04:00" name="close" finished-at="2025-01-28T19:39:21 GMT+04:00" duration-ms="320" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:tests.login_tests@5b58ed3c]" started-at="2025-01-28T19:39:21 GMT+04:00" name="launchbrowser" finished-at="2025-01-28T19:39:27 GMT+04:00" duration-ms="5907" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method signature="loginUnsuccessfullyTest5()[pri:6, instance:tests.login_tests@5b58ed3c]" started-at="2025-01-28T19:39:27 GMT+04:00" name="loginUnsuccessfullyTest5" description="TC ID - 34210: Blank username/Incorrect password validation" finished-at="2025-01-28T19:39:28 GMT+04:00" duration-ms="1189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginUnsuccessfullyTest5 -->
+        <test-method is-config="true" signature="close()[pri:0, instance:tests.login_tests@5b58ed3c]" started-at="2025-01-28T19:39:28 GMT+04:00" name="close" finished-at="2025-01-28T19:39:28 GMT+04:00" duration-ms="321" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:tests.login_tests@5b58ed3c]" started-at="2025-01-28T19:39:28 GMT+04:00" name="launchbrowser" finished-at="2025-01-28T19:39:34 GMT+04:00" duration-ms="5474" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method signature="loginUnsuccessfullyTest6()[pri:7, instance:tests.login_tests@5b58ed3c]" started-at="2025-01-28T19:39:34 GMT+04:00" name="loginUnsuccessfullyTest6" description="TC ID - 34211: Incorrect Username email format /blank password validation" finished-at="2025-01-28T19:39:35 GMT+04:00" duration-ms="780" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginUnsuccessfullyTest6 -->
+        <test-method is-config="true" signature="close()[pri:0, instance:tests.login_tests@5b58ed3c]" started-at="2025-01-28T19:39:35 GMT+04:00" name="close" finished-at="2025-01-28T19:39:35 GMT+04:00" duration-ms="293" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:tests.login_tests@5b58ed3c]" started-at="2025-01-28T19:39:35 GMT+04:00" name="launchbrowser" finished-at="2025-01-28T19:39:40 GMT+04:00" duration-ms="5240" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method signature="loginUnsuccessfullyTest7()[pri:8, instance:tests.login_tests@5b58ed3c]" started-at="2025-01-28T19:39:40 GMT+04:00" name="loginUnsuccessfullyTest7" description="TC ID - 34212: Correct username/Blank password validation" finished-at="2025-01-28T19:39:41 GMT+04:00" duration-ms="1163" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginUnsuccessfullyTest7 -->
+        <test-method is-config="true" signature="close()[pri:0, instance:tests.login_tests@5b58ed3c]" started-at="2025-01-28T19:39:42 GMT+04:00" name="close" finished-at="2025-01-28T19:39:42 GMT+04:00" duration-ms="293" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:tests.login_tests@5b58ed3c]" started-at="2025-01-28T19:39:42 GMT+04:00" name="launchbrowser" finished-at="2025-01-28T19:39:48 GMT+04:00" duration-ms="6125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method signature="ResetPassword()[pri:9, instance:tests.login_tests@5b58ed3c]" started-at="2025-01-28T19:39:48 GMT+04:00" name="ResetPassword" description="TC ID - 35084: Reset password" finished-at="2025-01-28T19:39:50 GMT+04:00" duration-ms="1452" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ResetPassword -->
+        <test-method is-config="true" signature="close()[pri:0, instance:tests.login_tests@5b58ed3c]" started-at="2025-01-28T19:39:50 GMT+04:00" name="close" finished-at="2025-01-28T19:39:50 GMT+04:00" duration-ms="269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:tests.login_tests@5b58ed3c]" started-at="2025-01-28T19:39:50 GMT+04:00" name="launchbrowser" finished-at="2025-01-28T19:39:56 GMT+04:00" duration-ms="5721" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method signature="forgotPasswordSuccessfully()[pri:12, instance:tests.login_tests@5b58ed3c]" started-at="2025-01-28T19:39:56 GMT+04:00" name="forgotPasswordSuccessfully" description="TC ID - 35084: Successfully send forgot password email" finished-at="2025-01-28T19:39:57 GMT+04:00" duration-ms="741" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forgotPasswordSuccessfully -->
+        <test-method is-config="true" signature="close()[pri:0, instance:tests.login_tests@5b58ed3c]" started-at="2025-01-28T19:39:57 GMT+04:00" name="close" finished-at="2025-01-28T19:39:57 GMT+04:00" duration-ms="353" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:tests.login_tests@5b58ed3c]" started-at="2025-01-28T19:39:57 GMT+04:00" name="launchbrowser" finished-at="2025-01-28T19:40:02 GMT+04:00" duration-ms="5238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method signature="InvalidEmail()[pri:13, instance:tests.login_tests@5b58ed3c]" started-at="2025-01-28T19:40:02 GMT+04:00" name="InvalidEmail" description="TC ID - 34270: Invalid email address format validation" finished-at="2025-01-28T19:40:03 GMT+04:00" duration-ms="588" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidEmail -->
+        <test-method is-config="true" signature="close()[pri:0, instance:tests.login_tests@5b58ed3c]" started-at="2025-01-28T19:40:03 GMT+04:00" name="close" finished-at="2025-01-28T19:40:04 GMT+04:00" duration-ms="296" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:tests.login_tests@5b58ed3c]" started-at="2025-01-28T19:40:04 GMT+04:00" name="launchbrowser" finished-at="2025-01-28T19:40:09 GMT+04:00" duration-ms="5540" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method signature="Logout()[pri:14, instance:tests.login_tests@5b58ed3c]" started-at="2025-01-28T19:40:09 GMT+04:00" name="Logout" description="TC ID - 34213: Logout" finished-at="2025-01-28T19:40:16 GMT+04:00" duration-ms="6715" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+        <test-method is-config="true" signature="close()[pri:0, instance:tests.login_tests@5b58ed3c]" started-at="2025-01-28T19:40:16 GMT+04:00" name="close" finished-at="2025-01-28T19:40:16 GMT+04:00" duration-ms="422" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- tests.login_tests -->
+    </test> <!-- /Users/mlungisimbele/Documents/GitHub/waslah.web -->
+  </suite> <!-- All Test Suite -->
+</testng-results>

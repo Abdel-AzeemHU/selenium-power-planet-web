@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+	<listeners>
+		<listener class-name="utilities.RetryListener"/>
+		<listener class-name="utilities.testlistener" />
+	</listeners>
+	<test verbose="2" preserve-order="true"
+		name="Test Suite for Web Application">
+		<!-- Define group inclusion in the <test> section -->
+		<classes>
+			<!-- Tests from login_tests 11-->
+			<class name="tests.PowerPlanetTests">
+				<methods>
+					<include name="verifyMapDisplay" />
+					<include name="verifyPowerPlanetText" />
+					<include name="testEnergySlider" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

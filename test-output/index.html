@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-All_Test_Suite" class="navigator-link">
+              <span class="suite-name border-failed">All Test Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-All_Test_Suite" class="navigator-link ">
+                    <span>C:\Users\deepita.sharma\git\Waslah QA Web\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-All_Test_Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-All_Test_Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-All_Test_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-All_Test_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-All_Test_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-All_Test_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">22 methods, 2 failed,   20 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-All_Test_Suite" class="hide-methods failed suite-All_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-All_Test_Suite -->
+                      <a href="#" panel-name="suite-All_Test_Suite" class="show-methods failed suite-All_Test_Suite"> (show)</a> <!-- show-methods failed suite-All_Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-All_Test_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="tests.merchant_tests" class="method navigator-link" hash-for-method="CalculateCourierPriceAndSelectFedex">CalculateCourierPriceAndSelectFedex</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="tests.merchant_tests" class="method navigator-link" hash-for-method="WalletMandatoryFieldTest">WalletMandatoryFieldTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-All_Test_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-All_Test_Suite" class="hide-methods passed suite-All_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-All_Test_Suite -->
+                      <a href="#" panel-name="suite-All_Test_Suite" class="show-methods passed suite-All_Test_Suite"> (show)</a> <!-- show-methods passed suite-All_Test_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-All_Test_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="tests.merchant_tests" class="method navigator-link" hash-for-method="CalculateCourierPricewithExceedingWeight">CalculateCourierPricewithExceedingWeight</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="tests.merchant_tests" class="method navigator-link" hash-for-method="CompleteWalletTopup">CompleteWalletTopup</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="tests.merchant_tests" class="method navigator-link" hash-for-method="CreateDomesticShipment">CreateDomesticShipment</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="tests.login_tests" class="method navigator-link" hash-for-method="InvalidEmail">InvalidEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="tests.login_tests" class="method navigator-link" hash-for-method="Logout">Logout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="tests.merchant_tests" class="method navigator-link" hash-for-method="POSRefundButton">POSRefundButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="tests.merchant_tests" class="method navigator-link" hash-for-method="POSRefundButtonDisableCase1">POSRefundButtonDisableCase1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="tests.merchant_tests" class="method navigator-link" hash-for-method="POSRefundButtonDisableCase2">POSRefundButtonDisableCase2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="tests.login_tests" class="method navigator-link" hash-for-method="ResetPassword">ResetPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="tests.merchant_tests" class="method navigator-link" hash-for-method="SignUpCompany">SignUpCompany</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="tests.merchant_tests" class="method navigator-link" hash-for-method="SignUpIndividual">SignUpIndividual</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="tests.login_tests" class="method navigator-link" hash-for-method="forgotPasswordSuccessfully">forgotPasswordSuccessfully</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="tests.login_tests" class="method navigator-link" hash-for-method="loginSuccessfullyTest">loginSuccessfullyTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="tests.login_tests" class="method navigator-link" hash-for-method="loginUnsuccessfullyTest1">loginUnsuccessfullyTest1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="tests.login_tests" class="method navigator-link" hash-for-method="loginUnsuccessfullyTest2">loginUnsuccessfullyTest2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="tests.login_tests" class="method navigator-link" hash-for-method="loginUnsuccessfullyTest3">loginUnsuccessfullyTest3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="tests.login_tests" class="method navigator-link" hash-for-method="loginUnsuccessfullyTest4">loginUnsuccessfullyTest4</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="tests.login_tests" class="method navigator-link" hash-for-method="loginUnsuccessfullyTest5">loginUnsuccessfullyTest5</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="tests.login_tests" class="method navigator-link" hash-for-method="loginUnsuccessfullyTest6">loginUnsuccessfullyTest6</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="tests.login_tests" class="method navigator-link" hash-for-method="loginUnsuccessfullyTest7">loginUnsuccessfullyTest7</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-All_Test_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-All_Test_Suite" class="panel All_Test_Suite">
+          <div class="suite-All_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.merchant_tests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CalculateCourierPriceAndSelectFedex">
+                  </a> <!-- CalculateCourierPriceAndSelectFedex -->
+                  <span class="method-name">CalculateCourierPriceAndSelectFedex</span>
+                  <div class="stack-trace">java.lang.AssertionError: Courier selection could not be done for FedEx - test failed
+	at org.testng.Assert.fail(Assert.java:110)
+	at teststeps.merchant_actions.SelectCourierFromCourierPage(merchant_actions.java:676)
+	at tests.merchant_tests.CalculateCourierPriceAndSelectFedex(merchant_tests.java:110)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+</div> <!-- stack-trace -->
+                  <em>
+(TC ID - 47081: Calculate the courier price)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="WalletMandatoryFieldTest">
+                  </a> <!-- WalletMandatoryFieldTest -->
+                  <span class="method-name">WalletMandatoryFieldTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: Wallet Mandatory field are blank - test failed
+	at org.testng.Assert.fail(Assert.java:110)
+	at teststeps.merchant_actions.WalletMandatoryFieldCheck(merchant_actions.java:786)
+	at tests.merchant_tests.WalletMandatoryFieldTest(merchant_tests.java:120)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+</div> <!-- stack-trace -->
+                  <em>
+(TC ID : Wallet Mandatory field check)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-failed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.merchant_tests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CalculateCourierPricewithExceedingWeight">
+                  </a> <!-- CalculateCourierPricewithExceedingWeight -->
+                  <span class="method-name">CalculateCourierPricewithExceedingWeight</span>
+                  <em>
+(TC ID - 47081: Calculate the courier price with exceeding weight)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CompleteWalletTopup">
+                  </a> <!-- CompleteWalletTopup -->
+                  <span class="method-name">CompleteWalletTopup</span>
+                  <em>
+(TC ID 46045: Calculate the Wallet Topup)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CreateDomesticShipment">
+                  </a> <!-- CreateDomesticShipment -->
+                  <span class="method-name">CreateDomesticShipment</span>
+                  <em>
+(TC ID - 37770: Create a domestic shipment using the new journey)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="POSRefundButton">
+                  </a> <!-- POSRefundButton -->
+                  <span class="method-name">POSRefundButton</span>
+                  <em>
+(TC ID - 46097: POS Refund button functionality)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="POSRefundButtonDisableCase1">
+                  </a> <!-- POSRefundButtonDisableCase1 -->
+                  <span class="method-name">POSRefundButtonDisableCase1</span>
+                  <em>
+(TC ID - 46101: POS Refund button functionality)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="POSRefundButtonDisableCase2">
+                  </a> <!-- POSRefundButtonDisableCase2 -->
+                  <span class="method-name">POSRefundButtonDisableCase2</span>
+                  <em>
+(TC ID - 46101: POS Refund button functionality)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SignUpCompany">
+                  </a> <!-- SignUpCompany -->
+                  <span class="method-name">SignUpCompany</span>
+                  <em>
+(TC ID - 35086: Sign Up - Company functionality)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SignUpIndividual">
+                  </a> <!-- SignUpIndividual -->
+                  <span class="method-name">SignUpIndividual</span>
+                  <em>
+(TC ID - 35088: Sign Up - Individual functionality)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.login_tests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="InvalidEmail">
+                  </a> <!-- InvalidEmail -->
+                  <span class="method-name">InvalidEmail</span>
+                  <em>
+(TC ID - 34270: Invalid email address format validation)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Logout">
+                  </a> <!-- Logout -->
+                  <span class="method-name">Logout</span>
+                  <em>
+(TC ID - 34213: Logout)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ResetPassword">
+                  </a> <!-- ResetPassword -->
+                  <span class="method-name">ResetPassword</span>
+                  <em>
+(TC ID - 35084: Reset password)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="forgotPasswordSuccessfully">
+                  </a> <!-- forgotPasswordSuccessfully -->
+                  <span class="method-name">forgotPasswordSuccessfully</span>
+                  <em>
+(TC ID - 35084: Successfully send forgot password email)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginSuccessfullyTest">
+                  </a> <!-- loginSuccessfullyTest -->
+                  <span class="method-name">loginSuccessfullyTest</span>
+                  <em>
+(TC ID - 34206: Login)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginUnsuccessfullyTest1">
+                  </a> <!-- loginUnsuccessfullyTest1 -->
+                  <span class="method-name">loginUnsuccessfullyTest1</span>
+                  <em>
+(TC ID - 34206: Login - Incorrect Username/Correct password validation)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginUnsuccessfullyTest2">
+                  </a> <!-- loginUnsuccessfullyTest2 -->
+                  <span class="method-name">loginUnsuccessfullyTest2</span>
+                  <em>
+(TC ID - 34207: Correct username/Incorrect password validation)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginUnsuccessfullyTest3">
+                  </a> <!-- loginUnsuccessfullyTest3 -->
+                  <span class="method-name">loginUnsuccessfullyTest3</span>
+                  <em>
+(TC ID - 34208: Incorrect username/Incorrect password validation)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginUnsuccessfullyTest4">
+                  </a> <!-- loginUnsuccessfullyTest4 -->
+                  <span class="method-name">loginUnsuccessfullyTest4</span>
+                  <em>
+(TC ID - 34209: Blank username/Correct password validation)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginUnsuccessfullyTest5">
+                  </a> <!-- loginUnsuccessfullyTest5 -->
+                  <span class="method-name">loginUnsuccessfullyTest5</span>
+                  <em>
+(TC ID - 34210: Blank username/Incorrect password validation)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginUnsuccessfullyTest6">
+                  </a> <!-- loginUnsuccessfullyTest6 -->
+                  <span class="method-name">loginUnsuccessfullyTest6</span>
+                  <em>
+(TC ID - 34211: Incorrect Username email format /blank password validation)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginUnsuccessfullyTest7">
+                  </a> <!-- loginUnsuccessfullyTest7 -->
+                  <span class="method-name">loginUnsuccessfullyTest7</span>
+                  <em>
+(TC ID - 34212: Correct username/Blank password validation)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+        </div> <!-- panel All_Test_Suite -->
+        <div panel-name="test-xml-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\deepita.sharma\git\Waslah QA Web\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;All Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;/Users/mlungisimbele/Documents/GitHub/waslah.web&quot; verbose=&quot;2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.login_tests&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;loginSuccessfullyTest&quot;/&gt;
+          &lt;include name=&quot;loginUnsuccessfullyTest1&quot;/&gt;
+          &lt;include name=&quot;loginUnsuccessfullyTest2&quot;/&gt;
+          &lt;include name=&quot;loginUnsuccessfullyTest3&quot;/&gt;
+          &lt;include name=&quot;loginUnsuccessfullyTest4&quot;/&gt;
+          &lt;include name=&quot;loginUnsuccessfullyTest5&quot;/&gt;
+          &lt;include name=&quot;loginUnsuccessfullyTest6&quot;/&gt;
+          &lt;include name=&quot;loginUnsuccessfullyTest7&quot;/&gt;
+          &lt;include name=&quot;ResetPassword&quot;/&gt;
+          &lt;include name=&quot;forgotPasswordSuccessfully&quot;/&gt;
+          &lt;include name=&quot;InvalidEmail&quot;/&gt;
+          &lt;include name=&quot;Logout&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- tests.login_tests --&gt;
+      &lt;class name=&quot;tests.merchant_tests&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;SignUpCompany&quot;/&gt;
+          &lt;include name=&quot;SignUpIndividual&quot;/&gt;
+          &lt;include name=&quot;CreateDomesticShipment&quot;/&gt;
+          &lt;include name=&quot;CalculateCourierPricewithExceedingWeight&quot;/&gt;
+          &lt;include name=&quot;CalculateCourierPriceAndSelectFedex&quot;/&gt;
+          &lt;include name=&quot;CompleteWalletTopup&quot;/&gt;
+          &lt;include name=&quot;WalletMandatoryFieldTest&quot;/&gt;
+          &lt;include name=&quot;POSRefundButton&quot;/&gt;
+          &lt;include name=&quot;POSRefundButtonDisableCase1&quot;/&gt;
+          &lt;include name=&quot;POSRefundButtonDisableCase2&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- tests.merchant_tests --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- /Users/mlungisimbele/Documents/GitHub/waslah.web --&gt;
+&lt;/suite&gt; &lt;!-- All Test Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for All Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">/Users/mlungisimbele/Documents/GitHub/waslah.web (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for All Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for All Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_All_Test_Suite');
+function tableData_All_Test_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(22);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'CreateDomesticShipment')
+data.setCell(0, 2, 'tests.merchant_tests')
+data.setCell(0, 3, 43946);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'POSRefundButton')
+data.setCell(1, 2, 'tests.merchant_tests')
+data.setCell(1, 3, 10373);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'POSRefundButtonDisableCase2')
+data.setCell(2, 2, 'tests.merchant_tests')
+data.setCell(2, 3, 9322);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'CalculateCourierPricewithExceedingWeight')
+data.setCell(3, 2, 'tests.merchant_tests')
+data.setCell(3, 3, 8052);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'CompleteWalletTopup')
+data.setCell(4, 2, 'tests.merchant_tests')
+data.setCell(4, 3, 7297);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'POSRefundButtonDisableCase1')
+data.setCell(5, 2, 'tests.merchant_tests')
+data.setCell(5, 3, 7012);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'SignUpCompany')
+data.setCell(6, 2, 'tests.merchant_tests')
+data.setCell(6, 3, 6807);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'Logout')
+data.setCell(7, 2, 'tests.login_tests')
+data.setCell(7, 3, 6715);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'SignUpIndividual')
+data.setCell(8, 2, 'tests.merchant_tests')
+data.setCell(8, 3, 5360);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'CalculateCourierPriceAndSelectFedex')
+data.setCell(9, 2, 'tests.merchant_tests')
+data.setCell(9, 3, 3888);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'WalletMandatoryFieldTest')
+data.setCell(10, 2, 'tests.merchant_tests')
+data.setCell(10, 3, 3593);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'loginSuccessfullyTest')
+data.setCell(11, 2, 'tests.login_tests')
+data.setCell(11, 3, 2991);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'loginUnsuccessfullyTest3')
+data.setCell(12, 2, 'tests.login_tests')
+data.setCell(12, 3, 2367);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'loginUnsuccessfullyTest2')
+data.setCell(13, 2, 'tests.login_tests')
+data.setCell(13, 3, 2285);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'loginUnsuccessfullyTest1')
+data.setCell(14, 2, 'tests.login_tests')
+data.setCell(14, 3, 1472);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'ResetPassword')
+data.setCell(15, 2, 'tests.login_tests')
+data.setCell(15, 3, 1452);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'loginUnsuccessfullyTest5')
+data.setCell(16, 2, 'tests.login_tests')
+data.setCell(16, 3, 1189);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'loginUnsuccessfullyTest7')
+data.setCell(17, 2, 'tests.login_tests')
+data.setCell(17, 3, 1163);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'loginUnsuccessfullyTest4')
+data.setCell(18, 2, 'tests.login_tests')
+data.setCell(18, 3, 1066);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'loginUnsuccessfullyTest6')
+data.setCell(19, 2, 'tests.login_tests')
+data.setCell(19, 3, 780);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'forgotPasswordSuccessfully')
+data.setCell(20, 2, 'tests.login_tests')
+data.setCell(20, 3, 741);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'InvalidEmail')
+data.setCell(21, 2, 'tests.login_tests')
+data.setCell(21, 3, 588);
+window.suiteTableData['All_Test_Suite']= { tableData: data, tableDiv: 'times-div-All_Test_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-All_Test_Suite">
+              </div> <!-- times-div-All_Test_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for All Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.login_tests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchbrowser</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginSuccessfullyTest</span>
+                <span class="method-start">6544 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">10847 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchbrowser</span>
+                <span class="method-start">11339 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginUnsuccessfullyTest1</span>
+                <span class="method-start">16735 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">18535 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchbrowser</span>
+                <span class="method-start">18891 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginUnsuccessfullyTest2</span>
+                <span class="method-start">25820 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">28382 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchbrowser</span>
+                <span class="method-start">28660 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginUnsuccessfullyTest3</span>
+                <span class="method-start">34427 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">37122 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchbrowser</span>
+                <span class="method-start">37447 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginUnsuccessfullyTest4</span>
+                <span class="method-start">42675 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">43985 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchbrowser</span>
+                <span class="method-start">44307 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginUnsuccessfullyTest5</span>
+                <span class="method-start">50214 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">51687 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchbrowser</span>
+                <span class="method-start">52009 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginUnsuccessfullyTest6</span>
+                <span class="method-start">57483 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">58446 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchbrowser</span>
+                <span class="method-start">58739 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginUnsuccessfullyTest7</span>
+                <span class="method-start">63979 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">65408 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchbrowser</span>
+                <span class="method-start">65702 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ResetPassword</span>
+                <span class="method-start">71827 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">73588 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchbrowser</span>
+                <span class="method-start">73858 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">forgotPasswordSuccessfully</span>
+                <span class="method-start">79579 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">80507 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchbrowser</span>
+                <span class="method-start">80861 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">InvalidEmail</span>
+                <span class="method-start">86099 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">86924 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchbrowser</span>
+                <span class="method-start">87222 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Logout</span>
+                <span class="method-start">92762 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">99674 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.merchant_tests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchbrowser</span>
+                <span class="method-start">100098 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">CalculateCourierPriceAndSelectFedex</span>
+                <span class="method-start">105716 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">109777 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchbrowser</span>
+                <span class="method-start">110258 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CalculateCourierPricewithExceedingWeight</span>
+                <span class="method-start">120179 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">128441 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchbrowser</span>
+                <span class="method-start">128824 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CompleteWalletTopup</span>
+                <span class="method-start">134087 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">141646 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchbrowser</span>
+                <span class="method-start">142080 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">POSRefundButton</span>
+                <span class="method-start">147289 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">158075 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchbrowser</span>
+                <span class="method-start">158462 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">POSRefundButtonDisableCase1</span>
+                <span class="method-start">163752 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">171017 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchbrowser</span>
+                <span class="method-start">171392 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">POSRefundButtonDisableCase2</span>
+                <span class="method-start">177346 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">186951 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchbrowser</span>
+                <span class="method-start">187255 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">WalletMandatoryFieldTest</span>
+                <span class="method-start">192442 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">196224 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchbrowser</span>
+                <span class="method-start">196550 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">SignUpCompany</span>
+                <span class="method-start">201766 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">208840 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchbrowser</span>
+                <span class="method-start">209226 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">SignUpIndividual</span>
+                <span class="method-start">214451 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">220084 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchbrowser</span>
+                <span class="method-start">220357 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CreateDomesticShipment</span>
+                <span class="method-start">225747 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">270162 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
