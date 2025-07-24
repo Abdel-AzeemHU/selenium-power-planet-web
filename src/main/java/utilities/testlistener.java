@@ -24,9 +24,9 @@ public class testlistener extends common_actions implements ITestListener {
     @Override
     public void onStart(ITestContext context) {
         if (extent == null) {
-            reporter = new ExtentSparkReporter("./reports/Waslah_Execution_Report.html");
-            reporter.config().setDocumentTitle("Waslah Execution Results");
-            reporter.config().setReportName("Waslah Execution Results");
+            reporter = new ExtentSparkReporter("Extent.html");
+            reporter.config().setDocumentTitle("Execution Results");
+            reporter.config().setReportName("Execution Results");
             reporter.config().setTheme(Theme.DARK);
 
             extent = new ExtentReports();

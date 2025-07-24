@@ -152,7 +152,7 @@ public class base {
 
 		case "firefox":
 			FirefoxOptions firefoxOptions = new FirefoxOptions();
-//			firefoxOptions.setHeadless(true);
+			firefoxOptions.setHeadless(true);
 			firefoxOptions.addArguments("--disable-dev-shm-usage");
 			firefoxOptions.setCapability("moz:firefoxOptions", true);
 			return new FirefoxDriver(firefoxOptions);
