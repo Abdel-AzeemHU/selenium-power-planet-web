@@ -153,7 +153,20 @@ jobs:
       - name: Build Maven Test Project
         working-directory: web-tests
         run: |
-          mvn clean install -DskipTests
+          # Debug Maven and Java versions
+          echo "=== Environment Debug ==="
+          mvn --version
+          java -version
+          echo "JAVA_HOME: $JAVA_HOME"
+          
+          # Check if maven wrapper exists
+          if [ -f "mvnw" ]; then
+            echo "Using Maven wrapper"
+            ./mvnw clean install -DskipTests
+          else
+            echo "Using system Maven"
+            mvn clean install -DskipTests
+          fi
 
       - name: Run Web Tests
         working-directory: web-tests
