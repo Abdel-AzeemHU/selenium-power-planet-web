@@ -46,10 +46,11 @@ jobs:
       - name: Install Dependencies
         working-directory: power-plants-app
         run: |
-          # Install dependencies in the web subdirectory where they're actually needed
-          cd web && yarn install
-          # Install global packages
+          # Install global packages first
           yarn global add nodemon ts-node typescript
+          
+          # Use the same make command that works locally
+          make install
 
       - name: Setup Java
         uses: actions/setup-java@v4
@@ -57,21 +58,41 @@ jobs:
           distribution: 'temurin'
           java-version: ${{ env.JAVA_VERSION }}
 
+      - name: Start Power Plants API
+        working-directory: power-plants-app
+        run: |
+          # Start the API first in the background
+          echo "Starting API with make api-start..."
+          make api-start > api.log 2>&1 &
+          echo $! > api.pid
+          
+          # Wait for API to be ready
+          echo "Waiting for API to start..."
+          timeout=60
+          while [ $timeout -gt 0 ]; do
+            if curl -f http://localhost:9000/api-docs 2>/dev/null; then
+              echo "API is ready!"
+              break
+            fi
+            echo "API not ready yet, waiting..."
+            sleep 2
+            timeout=$((timeout-2))
+          done
+          
+          if [ $timeout -le 0 ]; then
+            echo "API failed to start within timeout"
+            echo "API logs:"
+            cat api.log || echo "No api.log file found"
+            cat api.pid | xargs kill -9 2>/dev/null || true
+            exit 1
+          fi
+
       - name: Start Power Plants Web Application
         working-directory: power-plants-app
         run: |
-          # Check if nodemon is available
-          echo "Checking nodemon availability:"
-          which nodemon || echo "nodemon not found in PATH"
-          
-          # Check what's in the Makefile
-          echo "Contents of Makefile:"
-          cat Makefile | head -20
-          
-          # Start the Web App in the background using Makefile
+          # Now start the Web App in the background
           echo "Starting Web App with make web-start..."
           make web-start > web.log 2>&1 &
-          # Store the PID for cleanup later
           echo $! > web.pid
           
           # Wait for the Web App to be ready
@@ -91,6 +112,8 @@ jobs:
             echo "Web App failed to start within timeout"
             echo "Web App logs:"
             cat web.log || echo "No web.log file found"
+            # Kill both processes
+            cat api.pid | xargs kill -9 2>/dev/null || true
             cat web.pid | xargs kill -9 2>/dev/null || true
             exit 1
           fi
