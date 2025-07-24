@@ -211,14 +211,19 @@ jobs:
               body: comment
             });
 
-      - name: Stop Power Plants Web Application
+      - name: Stop Power Plants Applications
         if: always()
         working-directory: power-plants-app
         run: |
-          # Kill the Web App process using the stored PID
+          # Kill both API and Web App processes using the stored PIDs
+          if [ -f api.pid ]; then
+            cat api.pid | xargs kill -9 2>/dev/null || true
+            rm api.pid
+          fi
           if [ -f web.pid ]; then
             cat web.pid | xargs kill -9 2>/dev/null || true
             rm web.pid
           fi
           # Also kill any remaining processes that might be related
+          pkill -f "make api-start" || true
           pkill -f "make web-start" || true
