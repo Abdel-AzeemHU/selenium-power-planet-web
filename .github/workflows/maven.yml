@@ -90,10 +90,18 @@ jobs:
       - name: Start Power Plants Web Application
         working-directory: power-plants-app
         run: |
+          echo "Checking if port 3000 is available..."
+          netstat -tlnp | grep :3000 || echo "Port 3000 is free"
+          
           # Now start the Web App in the background
           echo "Starting Web App with make web-start..."
           make web-start > web.log 2>&1 &
           echo $! > web.pid
+          
+          # Show the first few lines of logs immediately
+          sleep 5
+          echo "Initial web app logs:"
+          head -20 web.log || echo "No web.log content yet"
           
           # Wait for the Web App to be ready
           echo "Waiting for Web App to start..."
@@ -104,6 +112,8 @@ jobs:
               break
             fi
             echo "Web App not ready yet, waiting..."
+            echo "Current web app logs:"
+            tail -10 web.log || echo "No recent logs"
             sleep 2
             timeout=$((timeout-2))
           done
@@ -116,6 +126,25 @@ jobs:
             cat api.pid | xargs kill -9 2>/dev/null || true
             cat web.pid | xargs kill -9 2>/dev/null || true
             exit 1
+          fi
+
+      - name: Debug Web App Startup
+        if: always()
+        working-directory: power-plants-app
+        run: |
+          echo "=== Web App Logs ==="
+          cat web.log || echo "No web.log file"
+          echo "=== Process Status ==="
+          ps aux | grep -E "(node|npm|yarn)" | grep -v grep || echo "No Node processes"
+          echo "=== Port Status ==="
+          ss -tlnp | grep :3000 || echo "Port 3000 not in use"
+          echo "=== Web App Process Check ==="
+          if [ -f web.pid ]; then
+            pid=$(cat web.pid)
+            echo "Web app PID: $pid"
+            ps -p $pid || echo "Process $pid not running"
+          else
+            echo "No web.pid file found"
           fi
 
       - name: Build Maven Test Project
