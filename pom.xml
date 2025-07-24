@@ -107,6 +107,7 @@
                 <configuration>
                     <source>17</source>
                     <target>17</target>
+                    <proc>none</proc> <!-- Add this line -->
                 </configuration>
             </plugin>
         </plugins>
