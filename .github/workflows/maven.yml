@@ -57,9 +57,6 @@ jobs:
           distribution: 'temurin'
           java-version: ${{ env.JAVA_VERSION }}
 
-      - name: Setup Chrome Browser
-        uses: browser-actions/setup-chrome@v1
-
       - name: Start Power Plants Web Application
         working-directory: power-plants-app
         run: |
@@ -74,7 +71,6 @@ jobs:
           # Start the Web App in the background using Makefile
           echo "Starting Web App with make web-start..."
           make web-start > web.log 2>&1 &
-          
           # Store the PID for cleanup later
           echo $! > web.pid
           
