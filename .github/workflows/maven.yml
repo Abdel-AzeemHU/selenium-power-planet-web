@@ -159,6 +159,13 @@ jobs:
           java -version
           echo "JAVA_HOME: $JAVA_HOME"
           
+          # Check for Lombok in dependency tree
+          echo "=== Checking for Lombok dependencies ==="
+          mvn dependency:tree | grep -i lombok || echo "No Lombok found in dependency tree"
+          
+          # Set JVM args to allow access to compiler internals for any annotation processors
+          export MAVEN_OPTS="--add-opens jdk.compiler/com.sun.tools.javac.processing=ALL-UNNAMED --add-opens jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED --add-opens jdk.compiler/com.sun.tools.javac.tree=ALL-UNNAMED --add-opens jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED"
+          
           # Check if maven wrapper exists
           if [ -f "mvnw" ]; then
             echo "Using Maven wrapper"
@@ -171,6 +178,9 @@ jobs:
       - name: Run Web Tests
         working-directory: web-tests
         run: |
+          # Set JVM args for annotation processors compatibility with Java 17
+          export MAVEN_OPTS="--add-opens jdk.compiler/com.sun.tools.javac.processing=ALL-UNNAMED --add-opens jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED --add-opens jdk.compiler/com.sun.tools.javac.tree=ALL-UNNAMED --add-opens jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED"
+          
           # Start timing
           start_time=$(date +%s)
           
@@ -194,27 +204,6 @@ jobs:
           echo "timestamp=$(date -u +"%Y-%m-%d %H:%M:%S UTC")" >> reports/test_summary.txt
           
           echo "TEST_DURATION=$formatted_duration" >> $GITHUB_ENV
-
-      - name: Generate Allure Report
-        working-directory: web-tests
-        if: always()
-        run: |
-          # Download and setup Allure
-          curl -o allure-2.30.0.tgz -Ls https://github.com/allure-framework/allure2/releases/download/2.30.0/allure-2.30.0.tgz
-          tar -zxvf allure-2.30.0.tgz
-          sudo mv allure-2.30.0 /opt/allure
-          sudo ln -s /opt/allure/bin/allure /usr/bin/allure
-          
-          # Generate report
-          allure generate ${{ env.ALLURE_RESULTS_DIR }} -o ${{ env.ALLURE_REPORT_DIR }} --clean
-
-      - name: Upload Allure Report
-        uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: allure-report
-          path: web-tests/${{ env.ALLURE_REPORT_DIR }}
-          retention-days: 30
 
       - name: Upload Extent Report
         uses: actions/upload-artifact@v4
