@@ -93,9 +93,12 @@ jobs:
           echo "Checking if port 3000 is available..."
           netstat -tlnp | grep :3000 || echo "Port 3000 is free"
           
+          # Set Node.js legacy OpenSSL provider for compatibility with older React apps
+          export NODE_OPTIONS="--openssl-legacy-provider"
+          
           # Now start the Web App in the background
           echo "Starting Web App with make web-start..."
-          make web-start > web.log 2>&1 &
+          NODE_OPTIONS="--openssl-legacy-provider" make web-start > web.log 2>&1 &
           echo $! > web.pid
           
           # Show the first few lines of logs immediately
